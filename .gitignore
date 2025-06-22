@@ -1,0 +1,26 @@
+# PyCharm/IntelliJ IDEA
+.idea/**
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db 
