@@ -1,25 +1,28 @@
-[project]
+[tool.poetry]
 name = "loregen-common"
 version = "0.1.0"
 description = "Common classes for the loregen project"
-authors = [
-    {name = "ishish.io", email = "ts@ishish.io"}
-]
+authors = ["ishish.io <ts@ishish.io>"]
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-    "python-dotenv>=1.1.0,<2.0.0",
-    "boto3>=1.38.41,<2.0.0"
+packages = [{ include = "loregen", from = "src" }]
+repository = "https://github.com/ishish/loregen-common"
+homepage = "https://github.com/ishish/loregen-common"
+documentation = "https://github.com/ishish/loregen-common"
+keywords = ["loregen", "common"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
 ]
 
-[project.urls]
-Homepage = "https://github.com/ishish/loregen-common"
-Repository = "https://github.com/ishish/loregen-common"
-Issues = "https://github.com/ishish/loregen-common/issues"
+[tool.poetry.dependencies]
+python = ">=3.13"
+python-dotenv = ">=1.1.0,<2.0.0"
+boto3 = ">=1.38.41,<2.0.0"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.poetry.group.dev.dependencies]
+build = "^1.2.2.post1"
+twine = "^5.1.0"
 
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
