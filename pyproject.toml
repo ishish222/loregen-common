@@ -1,10 +1,10 @@
 [tool.poetry]
 name = "loregen-common"
-version = "0.1.0"
+version = "0.1.2"
 description = "Common classes for the loregen project"
 authors = ["ishish.io <ts@ishish.io>"]
 readme = "README.md"
-packages = [{ include = "loregen", from = "src" }]
+packages = [{ include = "loregen_common", from = "src" }]
 repository = "https://github.com/ishish/loregen-common"
 homepage = "https://github.com/ishish/loregen-common"
 documentation = "https://github.com/ishish/loregen-common"
@@ -15,7 +15,7 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.13"
+python = ">=3.11,<4.0"
 python-dotenv = ">=1.1.0,<2.0.0"
 boto3 = ">=1.38.41,<2.0.0"
 
