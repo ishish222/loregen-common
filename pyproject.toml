@@ -1,0 +1,25 @@
+[project]
+name = "loregen-common"
+version = "0.1.0"
+description = "Common classes for the loregen project"
+authors = [
+    {name = "ishish.io", email = "ts@ishish.io"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "python-dotenv>=1.1.0,<2.0.0",
+    "boto3>=1.38.41,<2.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/ishish/loregen-common"
+Repository = "https://github.com/ishish/loregen-common"
+Issues = "https://github.com/ishish/loregen-common/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
