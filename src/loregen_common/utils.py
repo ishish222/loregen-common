@@ -1,6 +1,6 @@
 # from langchain.chat_models import init_chat_model
 from langchain_core.language_models import BaseChatModel
-from loregen.backend.common import models
+from .models import models
 
 
 def load_chat_model(fully_specified_name: str) -> BaseChatModel:

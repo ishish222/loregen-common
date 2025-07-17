@@ -46,6 +46,24 @@ models['openai/gpt-4o-2024-11-20'] = ChatOpenRouter(
     }
 )
 
+models['openai/gpt-4o (temp 0.5)'] = ChatOpenRouter(
+    model_name='openai/gpt-4o',
+    temperature=0.5,
+    metadata={
+        'ls_provider': 'openrouter',
+        'ls_model_name': 'openai/gpt-4o'
+    }
+)
+
+models['openai/gpt-4o (temp 0.8)'] = ChatOpenRouter(
+    model_name='openai/gpt-4o',
+    temperature=0.8,
+    metadata={
+        'ls_provider': 'openrouter',
+        'ls_model_name': 'openai/gpt-4o'
+    }
+)
+
 models['openai/gpt-4o'] = ChatOpenRouter(
     model_name='openai/gpt-4o',
     temperature=0.0,
