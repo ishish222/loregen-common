@@ -4,10 +4,9 @@ import random
 from langchain_core.runnables import RunnableLambda, Runnable
 from typing import Sequence, TypeVar, Generic, Type, cast, get_args
 from langchain_core.messages import HumanMessage
-from langchain_core.language_models import BaseChatModel
+from langchain_core.language_models import BaseChatModel, LanguageModelInput
 from langchain_core.prompts.chat import ChatPromptValue
 from pydantic import BaseModel, ConfigDict, create_model, Field
-from langchain_core.language_models import LanguageModelInput
 
 random.seed()
 T = TypeVar("T", bound=BaseModel)
